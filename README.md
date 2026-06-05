@@ -39,6 +39,29 @@ Le projet est organisé en plusieurs parties :
 - Base de données : `supabase` 
 - Outils et dépendances :
   - Gestion de versions : Git / GitHub 
-  - le lien de: `https://incredible-peony-2910e5.netlify.app/`
+  - le lien débloyer: `https://incredible-peony-2910e5.netlify.app/`
 
 ---
+
+## Architecture du code (front)
+
+- `main.js` : logique d’interface (écouteurs d’événements, wiring entre UI, API et validations).  
+- `api/supabase.js` : fonctions CRUD pour les idées.  
+- `api/openrouter.js` : intégration de l’IA OpenRouter pour la suggestion automatique de catégorie, avec fallback robuste.  
+- `utils/validation.js` : règles de validation pour les champs (titre, description, etc.).  
+- `utils/ui.js` : helpers d’interface (toasts, modales de confirmation, formatage de date, badges de catégories).
+
+---
+
+
+Parfait, bonne nouvelle que tout fonctionne à nouveau.
+
+Pour résumer ce que tu as mis en place :
+
+Projet NPM initialisé avec package.json
+Vite installé et utilisé comme serveur de dev (npm run dev)
+Supabase utilisé via @supabase/supabase-js (NPM) dans main.js
+Clés sensibles (VITE_SUPABASE_URL, VITE_SUPABASE_ANON_KEY, VITE_OPENROUTER_API_KEY) isolées dans .env
+Ancien app.js et CDN Supabase supprimés du HTML
+Si tu veux, on peut maintenant :
+

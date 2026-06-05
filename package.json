@@ -1,0 +1,28 @@
+{
+  "name": "sunu-idees",
+  "version": "1.0.0",
+  "description": "Sunu-idées est une application permettant de recueillir, gérer et valoriser des idées (innovation, amélioration de processus, projets, etc.).   L’objectif du projet est de fournir une plateforme simple où les utilisateurs peuvent proposer des idées, les consulter, les commenter et éventuellement les valider.",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khalil-samb/Sunu-id-ee-partie-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khalil-samb/Sunu-id-ee-partie-2/issues"
+  },
+  "homepage": "https://github.com/Khalil-samb/Sunu-id-ee-partie-2#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.107.0"
+  },
+  "devDependencies": {
+    "vite": "^5.3.0"
+  }
+}
